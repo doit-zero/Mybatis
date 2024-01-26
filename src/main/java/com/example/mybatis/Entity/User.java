@@ -5,6 +5,7 @@ public class User {
     private String username;
     private String email;
 
+
     @Override
     public String toString() {
         return "유저 id : " + id + " " + " 유저 네임 " + username ;
@@ -22,5 +23,4 @@ public class User {
         return email;
     }
 
-    // Getters and setters
 }

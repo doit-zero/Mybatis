@@ -9,6 +9,7 @@ public interface UserMapper {
     @Select("SELECT * FROM users WHERE id = #{id}")
     User findById(@Param("id") Long id);
 
+    @Options(useGeneratedKeys = true, keyProperty = "id")
     @Insert("INSERT INTO users (username, email) VALUES (#{username}, #{email})")
     void save(String username, String email);
 
